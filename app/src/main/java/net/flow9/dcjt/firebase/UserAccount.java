@@ -1,7 +1,7 @@
 package net.flow9.dcjt.firebase;
 
 /**
- *  사용자 계정 정보 모델 클래스
+ *  사용자 계정 정보 모델 클래스1
  */
 public class UserAccount {
 
