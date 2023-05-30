@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972114166169",
+    "project_id": "dcjt-ea3e6",
+    "storage_bucket": "dcjt-ea3e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972114166169:android:3d4b5771c240f112315308",
+        "android_client_info": {
+          "package_name": "net.flow9.dcjt.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWpJagUJO4Vn_i3yJOfo8Vbwbvgw0DjQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
