@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                             account.setEmailId(firebaseUser.getEmail());
                             account.setPassword(strPwd);
 
-                            // setValue : database에 insert 하는 행위
+                            // setValue : database에 insert 하는 행위1
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
 
                             Toast.makeText(RegisterActivity.this, "회원 가입 완료", Toast.LENGTH_SHORT).show();
