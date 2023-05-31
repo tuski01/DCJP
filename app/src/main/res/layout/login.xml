@@ -7,12 +7,12 @@
 
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/et_email"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_round"
-        android:hint="EMAIL"
-        android:inputType="text"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -21,12 +21,12 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/et_pwd"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/edit_round"
-        android:inputType="text"
-        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:hint="PassWord"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -41,7 +41,7 @@
         app:layout_constraintGuide_begin="257dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_login"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/loginbutton"
@@ -57,36 +57,67 @@
         app:layout_constraintVertical_bias="0.594" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="250dp"
+        android:id="@+id/btn_register"
+        android:layout_width="120dp"
         android:layout_height="50dp"
-        android:background="@drawable/loginbutton"
-        android:text="로그인"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="33dp"
+        android:background="#00ff0000"
+        android:text="회원가입"
+        android:textColor="#A7A7A7"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintEnd_toStartOf="@+id/btn_passfind"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="250dp"
+        android:background="#00ff0000"
+        android:textColor="#A7A7A7"
+        android:textSize="12dp"
+        android:id="@+id/btn_passfind"
+        android:layout_width="120dp"
         android:layout_height="50dp"
-        android:background="@drawable/loginbutton"
-        android:text="로그인"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
+        android:text="비밀번호 찾기"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="647dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 카카오 로그인 -->
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/loginbutton"-->
+<!--        android:text="로그인"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.767" />-->
+
+    <!-- 네이버 로그인 -->
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/loginbutton"-->
+<!--        android:text="로그인"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.861" />-->
 
     <CheckBox
         android:id="@+id/checkBox"
