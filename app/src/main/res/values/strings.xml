@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">firebase</string>
+    <string name="menu_title_home">메인화면</string>
+    <string name="menu_title_chating">채팅</string>
+    <string name="menu_title_map">분실물 지도</string>
+    <string name="menu_title_myInfo">마이페이지</string>
+
+
 </resources>
