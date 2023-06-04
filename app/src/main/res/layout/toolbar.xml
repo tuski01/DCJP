@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"
+        android:background="@color/PrimaryColor"
         android:orientation="vertical">
 
         <LinearLayout
@@ -25,19 +25,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/icon_search" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <!-- 위치 조정용? -->
 
             <ImageView
                 android:layout_width="20dp"
@@ -45,7 +43,8 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="20dp"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_filter_outline_18" />
+                android:src="@drawable/searchicon" />
+
 
             <ImageView
                 android:layout_width="20dp"
@@ -53,13 +52,13 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="20dp"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/icon_notification" />
+                android:src="@drawable/notificationicon" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/PrimaryColor" />
+            android:background="@android:color/darker_gray" />
 
     </LinearLayout>
 
