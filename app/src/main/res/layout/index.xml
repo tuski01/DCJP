@@ -1,36 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/browser_actions_bg_grey"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/toolbar"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+
 <!--    레이아웃 병합 방법-->
 
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="689dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/browser_actions_bg_grey"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/include">
+
+<!--                위치 정보 받아온값 표시-->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="339dp"
+                    android:layout_marginBottom="401dp"
+                    android:text="동동동"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="228dp"
+                    android:layout_marginBottom="403dp"
+                    android:text="최근 분실물"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="267dp"
-        android:background="@color/white"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="57dp">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@color/white"
+                android:layout_marginBottom="25dp">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="76dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="327dp"
+                    android:layout_marginBottom="298dp"
+                    android:text="동동동"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="215dp"
+                    android:layout_marginBottom="306dp"
+                    android:text="최근 습득물"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@color/white">
 
 
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="267dp"
-        android:background="@color/white"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="341dp">
 
 
-    </LinearLayout>
+            </RelativeLayout>
 
-    <include layout="@layout/navibar"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+<!--    <include-->
+<!--        android:id="@+id/include2"-->
+<!--        layout="@layout/navibar" />-->
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
