@@ -111,7 +111,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.456" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button"
         android:layout_width="13dp"
         android:layout_height="20dp"

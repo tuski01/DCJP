@@ -8,7 +8,7 @@
     >
     <include
         android:id="@+id/include"
-        layout="@layout/toolbar_activity_location" />
+        layout="@layout/toolbar_activity_location2" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
